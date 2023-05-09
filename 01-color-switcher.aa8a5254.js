@@ -1,0 +1,2 @@
+var t=t=>{const e=document.querySelector(t);if(e)return e;throw Error(`the ${t} is not a valid selection`)};let e=null;const a=t("button[data-start]"),o=t("button[data-stop]");a.addEventListener("click",(()=>{e=setInterval((()=>{const t=`#${Math.floor(16777215*Math.random()).toString(16).padStart(6,0)}`;document.body.style.backgroundColor=t}),1e3),a.disabled=!0})),o.addEventListener("click",(()=>{clearInterval(e),a.disabled=!1}));
+//# sourceMappingURL=01-color-switcher.aa8a5254.js.map
