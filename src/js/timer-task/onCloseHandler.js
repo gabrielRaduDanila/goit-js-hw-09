@@ -22,7 +22,6 @@ const onCloseHandler = () => {
     clearInterval(countdown);
     items.forEach(item => (item.innerHTML = '00'));
     Notiflix.Notify.success('your time has come :)');
-    startBtn.disabled = true;
   }
 };
 

@@ -27,6 +27,7 @@ const timePicker = getElement('input[type="text"]');
 const fp = flatpickr(timePicker, options);
 
 const clickEventHandler = () => {
+  startBtn.disabled = true;
   countdown = setInterval(onCloseHandler, 1000);
   onCloseHandler();
 };
